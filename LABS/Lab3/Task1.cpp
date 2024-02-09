@@ -1,15 +1,16 @@
 #include<iostream>
 using namespace std;
-class BoardMarker{
-	private:
-	string brand;
+
+class BoardMarker {
+private:
+    string brand;
     string color;
     bool refillable;
     bool inkStatus;
-    
-    public:
-    //setters
-    	void setB(string newB) {
+
+public:
+    // Setters
+    void setB(string newB) {
         brand = newB;
     }
 
@@ -24,8 +25,9 @@ class BoardMarker{
     void setInkStatus(bool newInk) {
         inkStatus = newInk;
     }
-    //Getters:
-	string getB() {
+
+    // Getters
+    string getB() {
         return brand;
     }
 
@@ -33,41 +35,45 @@ class BoardMarker{
         return color;
     }
 
-    bool isR(){
+    bool isR() {
         return refillable;
     }
 
     bool isInkDepleted() {
         return !inkStatus;
     }
+
     // Writing method
-    void write(){
+    void write() {
         if (inkStatus) {
-            cout << "This " << color << " board marker is writing." <<endl;
+            cout << "This " << color << " board marker is writing." << endl;
         } else {
-            cout << "The ink is depleted." <<endl;
+            cout << "The ink is depleted." << endl;
         }
     }
-// Refill method
+
+    // Refill method
     void refill() {
         if (refillable) {
-            cout << "Refilling board marker." << std::endl;
+            cout << "Refilling board marker." << endl;
             inkStatus = true;
         } else {
-            cout << "The marker cant be refilled." << std::endl;
+            cout << "The marker can't be refilled." << endl;
         }
     }
 };
+
 int main() {
     BoardMarker m1("Zoro", "black", true);
-    std::cout << "brand: " << ma1.getBrand() << " ,color: " << m1.getColor() << " ,refillable: " << m1.isRefillable() <<endl;
+    cout << "brand: " << m1.getB() << " ,color: " << m1.getCol() << " ,refillable: " << m1.isR() << endl;
 
-    m1.write(); 
+    m1.write();
     m1.setInkStatus(false);
-    m1.write();  
-    m1.refill();  
+    m1.write();
+    m1.refill();
+
     BoardMarker m2("Dollar", "blue", false);
-    m2.refill();  
+    m2.refill();
 
     return 0;
 }
