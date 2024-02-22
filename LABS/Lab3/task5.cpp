@@ -9,6 +9,7 @@ class StationeryShop
 private:
     string itemList[100];
     double itemPrices[100] = {0.0};
+    int itemQuantities[100] = {0};  // Added array for item quantities in stock
     int itemCount;
 
 public:
@@ -18,13 +19,13 @@ public:
         itemCount = 0;
     }
 
-    // Method to add items to array
-    void addItem(const string& itemName, double price)
+    void addItem(const string& itemName, double price, int initialQuantity)
     {
         if (itemCount < 100)
         {
             itemList[itemCount] = itemName;
             itemPrices[itemCount] = price;
+            itemQuantities[itemCount] = initialQuantity;
             itemCount++;
             cout << itemName << " added successfully.\n";
         }
@@ -34,37 +35,28 @@ public:
         }
     }
 
-    // Method to display items along with prices
     void displayItemsPrices() const
     {
         cout << "List of all items with prices: \n";
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < itemCount; i++)
         {
-            if (!itemList[i].empty() && itemPrices[i] != 0.0)
-            {
-                cout << "Item " << i + 1 << ": " << itemList[i] << " Price: $ " << itemPrices[i] << "\n";
-            }
+            cout << "Item " << i + 1 << ": " << itemList[i] << " Price: $ " << itemPrices[i] << "\n";
         }
     }
 
-    // Method to display only items
     void displayItemsList() const
     {
         cout << "List of all items: \n";
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < itemCount; i++)
         {
-            if (!itemList[i].empty())
-            {
-                cout << "Item " << i + 1 << ": " << itemList[i] << "\n";
-            }
+            cout << "Item " << i + 1 << ": " << itemList[i] << "\n";
         }
     }
 
-    // Method to modify prices of items
     void modifyPrice(const string& itemName, double newPrice)
     {
         int flag = 0;
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < itemCount; i++)
         {
             if (itemList[i] == itemName)
             {
@@ -80,12 +72,11 @@ public:
         }
     }
 
-    // Method for generating a receipt
     void generateReceipt(const int itemsPurchased[], const int quantities[]) const
     {
         double totalAmount = 0.0;
         cout << "Receipt: \n";
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < itemCount; i++)
         {
             if (itemsPurchased[i] != 0)
             {
@@ -95,23 +86,29 @@ public:
         }
         cout << "Total Amount = $" << fixed << setprecision(2) << totalAmount << "\n";
     }
+
+    void displayTotalInventory() const
+    {
+        cout << "Total Inventory: \n";
+        for (int i = 0; i < itemCount; i++)
+        {
+            cout << "Item " << i + 1 << ": " << itemList[i] << " Quantity in Stock: " << itemQuantities[i] << "\n";
+        }
+    }
 };
 
 int main()
 {
-    // Object declaration
     StationeryShop myShop;
-
     int menu;
-
-    do
-    {
+    do   {
         cout << "\nStationery Shop Menu:\n";
         cout << "1. Add Items\n";
         cout << "2. Display List of Items\n";
         cout << "3. Modify Price of an Item\n";
         cout << "4. Display Items with Prices\n";
         cout << "5. Generate Receipt\n";
+        cout << "6. Display Total Inventory\n";  // New option
         cout << "Any other number to exit the shop.\n";
         cout << "Enter menu number: ";
         cin >> menu;
@@ -131,7 +128,11 @@ int main()
             cout << "Enter price of the item: $";
             cin >> price;
 
-            myShop.addItem(itemName, price);
+            int initialQuantity;
+            cout << "Enter initial stock quantity: ";
+            cin >> initialQuantity;
+
+            myShop.addItem(itemName, price, initialQuantity);
             break;
         case 2:
             myShop.displayItemsList();
@@ -168,8 +169,14 @@ int main()
 
             myShop.generateReceipt(purchasedItems, quantities); // Generate receipt
             break;
+        case 6:
+            myShop.displayTotalInventory();
+            break;
         default:
             cout << "Shop is closing now.\n";
             break;
         }
-    } while (menu >= 
+    } while (menu >= 1 && menu <= 6);
+
+    return 0;
+}
