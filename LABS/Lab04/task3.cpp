@@ -1,4 +1,8 @@
-/*Develop a class called WeekDays containing private data members - a string array named Days
+/*
+Programmer: Hafsa Rashid
+Student ID: 23K-0064
+
+Develop a class called WeekDays containing private data members - a string array named Days
 for the days of the week and an integer variable named CurrentDay for the current day. Create
 the following constructors and member functions for the class: a Default Constructor initializing
 the Days array from Sunday to Saturday, a Parameterized Constructor accepting an integer value
