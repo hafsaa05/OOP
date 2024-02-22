@@ -1,4 +1,8 @@
-/*Instantiate a class named Office to represent attributes of an office space, including Location
+/*
+Programmer: Hafsa Rashid
+Student ID: 23K-0064
+
+Instantiate a class named Office to represent attributes of an office space, including Location
 (default value: " "), SeatingCapacity (default value: 0), and Furniture (a string array with a
 size of 3, default: {"", "", ""}). Implement a parameterized constructor assigning default values to
 all attributes using a member initialization list. Create multiple instances of the Office class using
