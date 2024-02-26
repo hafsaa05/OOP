@@ -122,7 +122,6 @@ public:
 
 int main() {
     cout << "Programmer: Hafsa Rashid" << endl << "Student ID: 23K-0064" << endl << endl;
-    cout<<"\n";
     Restaurant foodHaven("Food Haven", "City Center", {"Sushi", "Pad Thai", "Mango Tango"}, {500.0, 250.0, 387.50});
     Restaurant pixelBites("Pixel Bites", "Cyber Street", {"Binary Burger", "Quantum Quinoa", "Data Donuts"}, {670.0, 560.0, 899.99});
 
