@@ -34,7 +34,7 @@ public:
     }
 };
 
-class ElectricCar : virtual public Car {
+class ElectricCar : public Car {
 public:
     int battery;
     
