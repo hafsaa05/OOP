@@ -42,7 +42,7 @@ class GraduateStudent : public Student, public Teacher {
 public:
     GraduateStudent(string name, int age, int ID, string grade, string subject, int roomNo) :Person(name, age), Student(name, age, ID, grade), Teacher(name, age, subject, roomNo) {}
     void Display() {
-        Person::Display(); // Accessing the Display() function from the Person class
+        Person::Display(); 
         Student::Display();
         Teacher::Display();
     }
