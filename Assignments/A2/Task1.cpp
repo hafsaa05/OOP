@@ -68,7 +68,7 @@ public:
 };
 
 int main() {
-    cout << "Programmer: Hafsa Rashid" << endl << "Student ID: 23K-0064" << endl;
+    cout << "Name: Hafsa Rashid" << endl << "Student ID: 23K-0064" << endl;
     FirewallTool obj("High", 2323, 9, {}, {});
     obj.generateList();
     obj.performScan();
