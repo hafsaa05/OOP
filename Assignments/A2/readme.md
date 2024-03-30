@@ -1,5 +1,5 @@
 ## Hafsa Rashid 23K-0064
-# Task1
+# Task 1
 Task One:
 You are developing a cybersecurity framework that has many layers of protection. The
 framework includes a SecurityTool representing a generic cybersecurity tool and a FirewallTool
@@ -37,4 +37,5 @@ along with the next 5 ports in sequence(for example 25 - 30) and from TCP and DN
 protocol.
 
 In your main function perform the scan based on the conditions.
+#Output:
 ## ![image](https://github.com/hafsaa05/OOP/assets/142868426/8e3db9ce-4f89-4f36-81ea-7f13df09fa12)
