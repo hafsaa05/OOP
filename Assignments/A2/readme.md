@@ -80,6 +80,7 @@ starting from “Beginner” to “Expert”.
 
 # Task Three:
 Daraz Loyalty Program System
+
 In this scenario, Daraz is launching a loyalty program for its customers.
 Design a class named DarazPersonData with the following member variables:
 ● lastName (string)
@@ -90,19 +91,23 @@ Design a class named DarazPersonData with the following member variables:
 ● zip (string)
 ● phone (string)
 • Write the appropriate accessor and mutator functions for these member variables.
+
 Next, design a class named DarazCustomerData. The DarazCustomerData class should have the
 following member variables:
 ● customerNumber (an int)
 ● loyaltyPoints (an int)
+
 The customerNumber variable will hold a unique integer for each customer. The loyaltyPoints
 variable will track the loyalty points earned by the customer. Write appropriate accessor and
 mutator functions for these member variables.
+
 Design a class named DarazLoyaltyProgram to manage the loyalty program:
 ● Include functions to add loyalty points for purchases, redeem loyalty points for discounts,
 and display the total loyalty points for a customer.
 Demonstrate the classes in a program by creating objects and performing operations such as
 adding loyalty points for purchases, redeeming loyalty points for discounts, and displaying total
 loyalty points for a customer.
+
 Input Validation: Do not accept negative values for loyalty points or invalid customer
 numbers.
 # Output
@@ -111,6 +116,7 @@ You've been tasked with designing the core components of a social media app simi
 Instagram. The app will allow users to create profiles, post content, interact with posts (e.g.,
 liking, commenting), and view their feed. There are different types of users, each with specific
 functionalities and access levels.
+
 Tasks:
 User Class Design:
 • Design a base class User to represent common attributes and functionalities shared by all
