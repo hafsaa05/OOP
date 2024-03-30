@@ -37,7 +37,7 @@ protocol.
 
 In your main function perform the scan based on the conditions.
 ## Output:
-## ![image](https://github.com/hafsaa05/OOP/assets/142868426/8e3db9ce-4f89-4f36-81ea-7f13df09fa12)
+## ![image](https://github.com/hafsaa05/OOP/assets/142868426/2123948a-548b-4815-a1f5-46d03b59b2aa)
 
 # Task Two:
 You are tasked with creating an inheritance hierarchy for a gaming environment. The
