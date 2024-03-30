@@ -25,7 +25,7 @@ public:
     }
 
     void performScan() {
-        cout << "Performing a generic security scan" << endl;
+        cout << "Performing a generic security scan!" << endl;
     }
 };
 
@@ -42,14 +42,14 @@ public:
     void generateList() {
         int startPort = 6;  // Starting port number chosen from the student ID
         cout << "Allowed ports: " << endl;
-        for (int i = startPort; i < startPort + 23; ++i) {
+        for (int i = startPort+1; i < startPort + 24; ++i) {
             cout << i << "\t";
-        }
+        }   //printing next 23 numbers i.e from 7 to 29
         cout << endl;
     }
 
     void performScan() {
-        cout << "Performing firewall scan..." << endl;
+        cout << "Performing firewall scan!" << endl;
         if (securityLevel == "High") {
             cout << "Only traffic from allowed ports and protocols are allowed." << endl;
         } else if (securityLevel == "Medium") {
