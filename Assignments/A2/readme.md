@@ -76,7 +76,8 @@ attacks a character, the character’s health decrements by the damage amount.
 
 In your main function, simulate the gaming environment and by showing all the experience
 starting from “Beginner” to “Expert”.
-# Output: ![image](https://github.com/hafsaa05/OOP/assets/142868426/2e524c36-f739-42ab-a402-5142118d0eab)
+# Output:
+# ![image](https://github.com/hafsaa05/OOP/assets/142868426/2e524c36-f739-42ab-a402-5142118d0eab)
 
 # Task Three:
 Daraz Loyalty Program System
