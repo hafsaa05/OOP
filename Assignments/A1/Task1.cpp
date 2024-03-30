@@ -103,7 +103,7 @@ public:
 };
 
 int main() {
-    cout<<"Programmer: Hafsa Rashid"<<endl<<"Student ID: 23K-0064"<<endl;
+    cout<<"Name: Hafsa Rashid"<<endl<<"Student ID: 23K-0064"<<endl;
     cout<<endl;
     Adopter hafsa("Hafsa", "123-456-789");
     Adopter harry("Harry", "987-654-321");
