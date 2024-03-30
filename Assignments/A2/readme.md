@@ -111,7 +111,9 @@ loyalty points for a customer.
 
 Input Validation: Do not accept negative values for loyalty points or invalid customer
 numbers.
-# Output
+# Output:
+# ![image](https://github.com/hafsaa05/OOP/assets/142868426/a2371973-bef5-458d-9b76-9b4c37730b24)
+
 # Task Four:
 You've been tasked with designing the core components of a social media app similar to
 Instagram. The app will allow users to create profiles, post content, interact with posts (e.g.,
