@@ -53,6 +53,7 @@ Class Weapon:
 weapons
 • use( ): the function asks the user which weapon they want to use from the available list of
 weapons.
+
 Class Character:
 • Attributes: level (int), experience (string), points (int)
 • Constructor: Parameterized constructor to set all attributes. Initial level and points are
