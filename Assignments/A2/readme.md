@@ -172,3 +172,4 @@ posts. Demonstrate how users can post content, interact with posts (e.g., liking
 commenting), and view their feed. Use polymorphism to ensure that the same methods
 can be used uniformly across different user types.
 # Output:
+# ![image](https://github.com/hafsaa05/OOP/assets/142868426/8467ec83-5380-48e4-8b51-01c084a8308e)
