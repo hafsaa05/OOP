@@ -12,6 +12,7 @@ public:
     Shape() : rad(0), area(0) {}
     Shape(int r) : rad(r), area(0) {}
 
+    //using formula for the area of a circle
     void calculateArea() {
         area = 3.142 * rad * rad;
     }
